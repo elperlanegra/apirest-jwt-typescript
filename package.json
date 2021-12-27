@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon \"src/app.ts\" --exec \"ts-node\" \"src/app.ts\" -e ts,json,ejs",
+    "start": "node dist/index.js",
+    "dev": "tsc-watch --onSuccess \"node dist/index.js\"",
+    "build": "tsc",
     "lint": "eslint . --ext .ts",
     "lint.fix": "eslint . --ext .ts —-fix"
   },

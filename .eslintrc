@@ -1,19 +1,38 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-    "plugins": ["@typescript-eslint"],
-
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-      "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "quotes": [
+      "error",
+      "single"
     ],
-
-    "rules": {
-      "quotes": ["error", "single"],
-      "semi": ["error", "never"],
-      "@typescript-eslint/no-explicit-any": ["error", { "fixToUnknown": true }],
-      "curly": "error",
-      "no-empty": "error"  
-    }
+    "semi": [
+      "error",
+      "never"
+    ],
+    "indent": [
+      "error",
+      2
+    ],
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
+    "@typescript-eslint/no-explicit-any": [
+      "error",
+      {
+        "fixToUnknown": true
+      }
+    ],
+    "curly": "error",
+    "no-empty": "error"
   }
+}
