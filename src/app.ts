@@ -15,10 +15,9 @@ app.set('port', process.env.PORT || 3000)
  * Middleware
  */
 app.use(morgan('dev'))
-app.use(expres.urlencoded({ extended: false }))
+app.use(expres.urlencoded({extended: false}))
 app.use(expres.json())
 app.use(cors())
-
 
 /**
  * Routes
